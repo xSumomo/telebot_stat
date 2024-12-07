@@ -5,10 +5,12 @@ from utils import top5
 from config import TELEGRAM_TOKEN
 import logging
 
-# Настройка логирования
+# Настройка логирования в файл
 logging.basicConfig(
+    filename='bot.log',  # Имя файла для логирования
+    filemode='a',  # Режим записи в файл (a - добавление)
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    level=logging.INFO
+    level=logging.WARNING
 )
 
 # Функция для обработки ошибок

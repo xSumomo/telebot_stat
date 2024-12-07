@@ -6,7 +6,7 @@ import logging
 # Настройка логирования
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    level=logging.INFO
+    level=logging.WARNING
 )
 
 # Имя базы данных SQLite
@@ -136,7 +136,7 @@ def get_top_5_users(chat_id):
             WHERE chat_id = ?
             GROUP BY user_id
             ORDER BY total_messages DESC
-            LIMIT 5
+            LIMIT 10
         ''', (chat_id,))
         top_users = cursor.fetchall()
         return top_users
