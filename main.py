@@ -84,13 +84,7 @@ def get_top_5_users(chat_id):
     finally:
         conn.close()
 
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    user = update.message.from_user
-    chat_id = update.message.chat_id
-    chat_name = update.message.chat.title if update.message.chat.title else 'No Title'
-    create_database_and_table(chat_id, chat_name)
-    add_user_and_update_message_count(user, chat_id, chat_name)
-    await update.message.reply_text('Привет! Я бот, который отвечает на "ПРИВЕТ".')
+
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user = update.message.from_user
@@ -109,7 +103,7 @@ async def top5(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         response = "Топ-5 пользователей по количеству сообщений:\n"
         top_user_id = top_users[0][0]  # user_id пользователя с наибольшим количеством сообщений
         for i, (user_id, username, first_name, last_name, total_messages) in enumerate(top_users, start=1):
-            user_display_name = username if username else f"{first_name} {last_name}"
+            user_display_name = username if username else f"{first_name}"
             if user_id == top_user_id:
                 user_display_name += " ⭐"
             response += f"{i}. {user_display_name}: {total_messages} сообщений\n"
@@ -120,7 +114,6 @@ async def top5(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 def main() -> None:
     application = ApplicationBuilder().token(TOKEN).build()
 
-    application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("top5", top5))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
