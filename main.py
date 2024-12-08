@@ -34,6 +34,7 @@ if httpx_logger.hasHandlers():
 # Добавляем обработчик файла к логгеру httpx
 httpx_logger.addHandler(file_handler)
 
+
 # Функция для обработки ошибок
 async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     logging.error(f"Ошибка при обработке обновления {update}: {context.error}")
