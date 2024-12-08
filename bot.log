@@ -487,3 +487,99 @@ HTTP Request: POST https://api.telegram.org/bot5845145624:AAFANaFDXMLjebfO-rVdAu
 2024-12-08 11:55:42,178 - root - INFO - Количество сообщений и опыт для пользователя qSumomo обновлены.
 2024-12-08 11:56:27,270 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
 2024-12-08 11:56:27,337 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 11:57:07,638 - root - INFO - Пользователь irwt_kok добавлен в базу данных или уже существует.
+2024-12-08 11:57:07,703 - root - INFO - Количество сообщений и опыт для пользователя irwt_kok обновлены.
+2024-12-08 11:57:27,913 - root - INFO - Пользователь irwt_kok добавлен в базу данных или уже существует.
+2024-12-08 11:57:27,978 - root - INFO - Количество сообщений и опыт для пользователя irwt_kok обновлены.
+2024-12-08 11:57:53,480 - root - INFO - Пользователь therealproffessor добавлен в базу данных или уже существует.
+2024-12-08 11:57:53,552 - root - INFO - Количество сообщений и опыт для пользователя therealproffessor обновлены.
+2024-12-08 11:59:29,430 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 11:59:29,502 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:00:00,680 - root - INFO - Пользователь irwt_kok добавлен в базу данных или уже существует.
+2024-12-08 12:00:00,751 - root - INFO - Количество сообщений и опыт для пользователя irwt_kok обновлены.
+2024-12-08 12:00:14,513 - root - INFO - Пользователь irwt_kok добавлен в базу данных или уже существует.
+2024-12-08 12:00:14,609 - root - INFO - Количество сообщений и опыт для пользователя irwt_kok обновлены.
+2024-12-08 12:00:15,028 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:00:15,091 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:02:06,861 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:02:06,946 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:03:01,651 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:03:01,748 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:03:46,652 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:03:46,765 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:04:17,696 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:04:17,775 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:08:18,054 - root - INFO - Пользователь irwt_kok добавлен в базу данных или уже существует.
+2024-12-08 12:08:18,124 - root - INFO - Количество сообщений и опыт для пользователя irwt_kok обновлены.
+2024-12-08 12:08:50,204 - root - INFO - Пользователь irwt_kok добавлен в базу данных или уже существует.
+2024-12-08 12:08:50,284 - root - INFO - Количество сообщений и опыт для пользователя irwt_kok обновлены.
+2024-12-08 12:08:58,892 - telegram.ext.Application - INFO - Application started
+2024-12-08 12:09:02,407 - root - INFO - Пользователь qSumomo добавлен в базу данных или уже существует.
+2024-12-08 12:09:02,498 - root - INFO - Количество сообщений и опыт для пользователя qSumomo обновлены.
+2024-12-08 12:09:16,210 - root - INFO - Пользователь irwt_kok добавлен в базу данных или уже существует.
+2024-12-08 12:09:16,303 - root - INFO - Количество сообщений и опыт для пользователя irwt_kok обновлены.
+2024-12-08 12:09:16,305 - root - ERROR - Ошибка при обработке обновления Update(message=Message(channel_chat_created=False, chat=Chat(id=-1001115035406, title='Laurel Club', type=<ChatType.SUPERGROUP>, username='LaurelClub'), date=datetime.datetime(2024, 12, 8, 9, 9, 15, tzinfo=datetime.timezone.utc), delete_chat_photo=False, from_user=User(first_name='Кок', id=422177402, is_bot=False, is_premium=True, username='irwt_kok'), group_chat_created=False, message_id=967022, supergroup_chat_created=False, text='Я неделю только зазоры на колене ловлю'), update_id=177532342): 'charmap' codec can't decode byte 0x98 in position 23: character maps to <undefined>
+2024-12-08 12:09:30,555 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:09:30,634 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:09:30,644 - root - ERROR - Ошибка при обработке обновления Update(message=Message(channel_chat_created=False, chat=Chat(id=-1001115035406, title='Laurel Club', type=<ChatType.SUPERGROUP>, username='LaurelClub'), date=datetime.datetime(2024, 12, 8, 9, 9, 29, tzinfo=datetime.timezone.utc), delete_chat_photo=False, from_user=User(first_name='Наум Юрьевич', id=770244641, is_bot=False, username='NaumYurievich'), group_chat_created=False, message_id=967024, message_thread_id=967022, reply_to_message=Message(channel_chat_created=False, chat=Chat(id=-1001115035406, title='Laurel Club', type=<ChatType.SUPERGROUP>, username='LaurelClub'), date=datetime.datetime(2024, 12, 8, 9, 9, 15, tzinfo=datetime.timezone.utc), delete_chat_photo=False, from_user=User(first_name='Кок', id=422177402, is_bot=False, is_premium=True, username='irwt_kok'), group_chat_created=False, message_id=967022, supergroup_chat_created=False, text='Я неделю только зазоры на колене ловлю'), supergroup_chat_created=False, text='Тем более брат'), update_id=177532344): 'charmap' codec can't decode byte 0x98 in position 23: character maps to <undefined>
+2024-12-08 12:09:36,274 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:09:36,345 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:09:36,347 - root - ERROR - Ошибка при обработке обновления Update(message=Message(channel_chat_created=False, chat=Chat(id=-1001115035406, title='Laurel Club', type=<ChatType.SUPERGROUP>, username='LaurelClub'), date=datetime.datetime(2024, 12, 8, 9, 9, 35, tzinfo=datetime.timezone.utc), delete_chat_photo=False, from_user=User(first_name='Наум Юрьевич', id=770244641, is_bot=False, username='NaumYurievich'), group_chat_created=False, message_id=967025, supergroup_chat_created=False, text='Тем более'), update_id=177532345): 'charmap' codec can't decode byte 0x98 in position 23: character maps to <undefined>
+2024-12-08 12:10:46,134 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:10:46,230 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:10:46,234 - root - ERROR - Ошибка при обработке обновления Update(message=Message(channel_chat_created=False, chat=Chat(id=-1001115035406, title='Laurel Club', type=<ChatType.SUPERGROUP>, username='LaurelClub'), date=datetime.datetime(2024, 12, 8, 9, 10, 45, tzinfo=datetime.timezone.utc), delete_chat_photo=False, from_user=User(first_name='Наум Юрьевич', id=770244641, is_bot=False, username='NaumYurievich'), group_chat_created=False, message_id=967026, supergroup_chat_created=False, text='По этому немного денежек кинул'), update_id=177532346): 'charmap' codec can't decode byte 0x98 in position 23: character maps to <undefined>
+2024-12-08 12:11:05,824 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:11:05,906 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:11:05,908 - root - ERROR - Ошибка при обработке обновления Update(message=Message(channel_chat_created=False, chat=Chat(id=-1001115035406, title='Laurel Club', type=<ChatType.SUPERGROUP>, username='LaurelClub'), date=datetime.datetime(2024, 12, 8, 9, 11, 4, tzinfo=datetime.timezone.utc), delete_chat_photo=False, from_user=User(first_name='Наум Юрьевич', id=770244641, is_bot=False, username='NaumYurievich'), group_chat_created=False, message_id=967027, supergroup_chat_created=False, text='Стрельнулся'), update_id=177532347): [Errno 2] No such file or directory: 'rank_modul\\ranks.txt'
+2024-12-08 12:11:10,394 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:11:10,458 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:11:10,459 - root - ERROR - Ошибка при обработке обновления Update(message=Message(channel_chat_created=False, chat=Chat(id=-1001115035406, title='Laurel Club', type=<ChatType.SUPERGROUP>, username='LaurelClub'), date=datetime.datetime(2024, 12, 8, 9, 11, 9, tzinfo=datetime.timezone.utc), delete_chat_photo=False, from_user=User(first_name='Наум Юрьевич', id=770244641, is_bot=False, username='NaumYurievich'), group_chat_created=False, message_id=967028, supergroup_chat_created=False, text='Нахуй'), update_id=177532348): [Errno 2] No such file or directory: 'rank_modul\\ranks.txt'
+2024-12-08 12:11:24,076 - telegram.ext.Application - INFO - Application started
+2024-12-08 12:11:24,782 - root - INFO - Пользователь qSumomo добавлен в базу данных или уже существует.
+2024-12-08 12:11:24,870 - root - INFO - Количество сообщений и опыт для пользователя qSumomo обновлены.
+2024-12-08 12:11:52,287 - root - INFO - Пользователь FvckAnime добавлен в базу данных или уже существует.
+2024-12-08 12:11:52,364 - root - INFO - Количество сообщений и опыт для пользователя FvckAnime обновлены.
+2024-12-08 12:11:53,726 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:11:53,787 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:11:53,787 - root - ERROR - Ошибка при обработке обновления Update(message=Message(channel_chat_created=False, chat=Chat(id=-1001115035406, title='Laurel Club', type=<ChatType.SUPERGROUP>, username='LaurelClub'), date=datetime.datetime(2024, 12, 8, 9, 11, 52, tzinfo=datetime.timezone.utc), delete_chat_photo=False, from_user=User(first_name='Наум Юрьевич', id=770244641, is_bot=False, username='NaumYurievich'), group_chat_created=False, message_id=967029, supergroup_chat_created=False, text='25 де регулируем все датчики сканером'), update_id=177532351): [Errno 2] No such file or directory: 'rank_modul\\ranks.txt'
+2024-12-08 12:12:08,434 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:12:08,539 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:12:08,539 - root - ERROR - Ошибка при обработке обновления Update(message=Message(channel_chat_created=False, chat=Chat(id=-1001115035406, title='Laurel Club', type=<ChatType.SUPERGROUP>, username='LaurelClub'), date=datetime.datetime(2024, 12, 8, 9, 12, 7, tzinfo=datetime.timezone.utc), delete_chat_photo=False, from_user=User(first_name='Наум Юрьевич', id=770244641, is_bot=False, username='NaumYurievich'), group_chat_created=False, message_id=967030, supergroup_chat_created=False, text='И ебошим пока не ляжет'), update_id=177532352): [Errno 2] No such file or directory: 'rank_modul\\ranks.txt'
+2024-12-08 12:12:39,841 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:12:39,917 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:12:39,918 - root - ERROR - Ошибка при обработке обновления Update(message=Message(channel_chat_created=False, chat=Chat(id=-1001115035406, title='Laurel Club', type=<ChatType.SUPERGROUP>, username='LaurelClub'), date=datetime.datetime(2024, 12, 8, 9, 12, 38, tzinfo=datetime.timezone.utc), delete_chat_photo=False, from_user=User(first_name='Наум Юрьевич', id=770244641, is_bot=False, username='NaumYurievich'), group_chat_created=False, message_id=967031, message_thread_id=967029, reply_to_message=Message(channel_chat_created=False, chat=Chat(id=-1001115035406, title='Laurel Club', type=<ChatType.SUPERGROUP>, username='LaurelClub'), date=datetime.datetime(2024, 12, 8, 9, 11, 52, tzinfo=datetime.timezone.utc), delete_chat_photo=False, from_user=User(first_name='Наум Юрьевич', id=770244641, is_bot=False, username='NaumYurievich'), group_chat_created=False, message_id=967029, supergroup_chat_created=False, text='25 де регулируем все датчики сканером'), supergroup_chat_created=False, text='Поправка при помощи сканера'), update_id=177532353): [Errno 2] No such file or directory: 'rank_modul\\ranks.txt'
+2024-12-08 12:13:57,454 - telegram.ext.Application - INFO - Application started
+2024-12-08 12:13:57,954 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:13:58,034 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:13:58,034 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:13:58,104 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:14:00,698 - root - INFO - Пользователь qSumomo добавлен в базу данных или уже существует.
+2024-12-08 12:14:00,784 - root - INFO - Количество сообщений и опыт для пользователя qSumomo обновлены.
+2024-12-08 12:14:10,683 - root - INFO - Пользователь qSumomo добавлен в базу данных или уже существует.
+2024-12-08 12:14:10,761 - root - INFO - Количество сообщений и опыт для пользователя qSumomo обновлены.
+2024-12-08 12:14:12,079 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:14:12,163 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:14:54,514 - root - INFO - Пользователь lesyarada добавлен в базу данных или уже существует.
+2024-12-08 12:14:54,579 - root - INFO - Количество сообщений и опыт для пользователя lesyarada обновлены.
+2024-12-08 12:15:05,284 - root - INFO - Пользователь lesyarada добавлен в базу данных или уже существует.
+2024-12-08 12:15:05,354 - root - INFO - Количество сообщений и опыт для пользователя lesyarada обновлены.
+2024-12-08 12:15:11,909 - root - INFO - Пользователь lesyarada добавлен в базу данных или уже существует.
+2024-12-08 12:15:12,070 - root - INFO - Количество сообщений и опыт для пользователя lesyarada обновлены.
+2024-12-08 12:15:22,457 - root - INFO - Пользователь lesyarada добавлен в базу данных или уже существует.
+2024-12-08 12:15:22,531 - root - INFO - Количество сообщений и опыт для пользователя lesyarada обновлены.
+2024-12-08 12:15:27,544 - root - INFO - Пользователь lesyarada добавлен в базу данных или уже существует.
+2024-12-08 12:15:27,618 - root - INFO - Количество сообщений и опыт для пользователя lesyarada обновлены.
+2024-12-08 12:15:48,715 - root - INFO - Пользователь NeverBrokeAgainMSNTD добавлен в базу данных или уже существует.
+2024-12-08 12:15:48,909 - root - INFO - Количество сообщений и опыт для пользователя NeverBrokeAgainMSNTD обновлены.
+2024-12-08 12:16:02,479 - root - INFO - Пользователь NaumYurievich добавлен в базу данных или уже существует.
+2024-12-08 12:16:02,574 - root - INFO - Количество сообщений и опыт для пользователя NaumYurievich обновлены.
+2024-12-08 12:17:10,516 - root - INFO - Пользователь lesyarada добавлен в базу данных или уже существует.
+2024-12-08 12:17:10,624 - root - INFO - Количество сообщений и опыт для пользователя lesyarada обновлены.
+2024-12-08 12:17:30,964 - root - INFO - Пользователь slplss8 добавлен в базу данных или уже существует.
+2024-12-08 12:17:31,044 - root - INFO - Количество сообщений и опыт для пользователя slplss8 обновлены.
+2024-12-08 12:17:43,202 - root - INFO - Пользователь slplss8 добавлен в базу данных или уже существует.
+2024-12-08 12:17:43,307 - root - INFO - Количество сообщений и опыт для пользователя slplss8 обновлены.
+2024-12-08 12:18:10,851 - root - INFO - Пользователь qSumomo добавлен в базу данных или уже существует.
+2024-12-08 12:18:10,961 - root - INFO - Количество сообщений и опыт для пользователя qSumomo обновлены.
+2024-12-08 12:18:29,352 - root - INFO - Пользователь qSumomo добавлен в базу данных или уже существует.
+2024-12-08 12:18:29,431 - root - INFO - Количество сообщений и опыт для пользователя qSumomo обновлены.

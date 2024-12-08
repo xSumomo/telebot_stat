@@ -2,8 +2,9 @@ import sqlite3
 from datetime import datetime
 import random
 import logging
+import os
 
-# Настройка логирования
+# Настройка логирования с использованием UTF-8
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
@@ -83,15 +84,15 @@ def update_user_rank(user_id, chat_id):
         ''', (user_id, chat_id))
         total_experience = cursor.fetchone()[0]
 
-        new_rank = 'Новичок'
-        if total_experience >= 500:
-            new_rank = 'ЛЕГЕНДА'
-        elif total_experience >= 400:
-            new_rank = 'ГУРУ'
-        elif total_experience >= 300:
-            new_rank = 'ЧЕХОТКА'
-        elif total_experience >= 200:
-            new_rank = 'САДИСТ'
+        # Загрузка рангов и опыта из файлов
+        ranks = load_ranks(os.path.join('rank_module', 'ranks.txt'))
+        experience_thresholds = load_experience(os.path.join('rank_module', 'experience.txt'))
+
+        # Определение нового ранга
+        new_rank = ranks[0]  # Начальный ранг
+        for i, experience_threshold in enumerate(experience_thresholds):
+            if total_experience >= experience_threshold:
+                new_rank = ranks[i]
 
         cursor.execute('''
             UPDATE main_data_user
@@ -144,3 +145,21 @@ def get_top_5_users(chat_id):
         logging.error(f"Ошибка при получении топ-5 пользователей: {e}")
     finally:
         conn.close()
+
+# Функция для загрузки рангов из файла
+def load_ranks(file_path):
+    ranks = []
+    with open(file_path, 'r', encoding='utf-8') as file:
+        for line in file:
+            rank = line.strip()
+            ranks.append(rank)
+    return ranks
+
+# Функция для загрузки опыта из файла
+def load_experience(file_path):
+    experience_thresholds = []
+    with open(file_path, 'r', encoding='utf-8') as file:
+        for line in file:
+            experience = int(line.strip())
+            experience_thresholds.append(experience)
+    return experience_thresholds
