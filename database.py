@@ -6,7 +6,7 @@ import logging
 # Настройка логирования
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    level=logging.WARNING
+    level=logging.INFO
 )
 
 # Имя базы данных SQLite
@@ -32,7 +32,7 @@ def create_database_and_table():
             )
         ''')
         conn.commit()
-        logging.info("Таблица main_data_user создана или уже существует.")
+        # logging.info("Таблица main_data_user создана или уже существует.")
     except sqlite3.Error as e:
         logging.error(f"Ошибка при создании базы данных или таблицы: {e}")
     finally:
@@ -99,7 +99,7 @@ def update_user_rank(user_id, chat_id):
             WHERE user_id = ? AND chat_id = ?
         ''', (new_rank, user_id, chat_id))
         conn.commit()
-        logging.info(f"Звание пользователя {user_id} в чате {chat_id} обновлено на {new_rank}.")
+        # logging.info(f"Звание пользователя {user_id} в чате {chat_id} обновлено на {new_rank}.")
     except sqlite3.Error as e:
         logging.error(f"Ошибка при обновлении звания пользователя: {e}")
     finally:
