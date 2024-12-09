@@ -2,3 +2,4 @@ bot.log
 test-db.db
 connect.py
 config.py
+.backup

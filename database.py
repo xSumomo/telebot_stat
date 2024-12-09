@@ -13,6 +13,7 @@ logging.basicConfig(
 # Имя базы данных SQLite
 DB_NAME = 'test-db.db'
 
+
 # Функция для создания базы данных и таблицы пользователей
 def create_database_and_table():
     conn = sqlite3.connect(DB_NAME)
@@ -22,6 +23,7 @@ def create_database_and_table():
             CREATE TABLE IF NOT EXISTS main_data_user (
                 user_id INTEGER,
                 chat_id INTEGER,
+                chat_title TEXT,
                 username TEXT,
                 first_name TEXT,
                 last_name TEXT,
@@ -33,14 +35,16 @@ def create_database_and_table():
             )
         ''')
         conn.commit()
-        # logging.info("Таблица main_data_user создана или уже существует.")
+        logging.info("Таблица main_data_user создана или уже существует.")
     except sqlite3.Error as e:
         logging.error(f"Ошибка при создании базы данных или таблицы: {e}")
     finally:
         conn.close()
 
+
+
 # Функция для добавления пользователя в базу данных и обновления количества сообщений и опыта
-def add_user_and_update_message_count(user, chat_id):
+def add_user_and_update_message_count(user, chat_id, chat_title):
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
     try:
@@ -51,9 +55,9 @@ def add_user_and_update_message_count(user, chat_id):
         experience = random.randint(1, 10)
 
         cursor.execute('''
-            INSERT OR IGNORE INTO main_data_user (user_id, chat_id, username, first_name, last_name, date, message_count, experience, rank)
-            VALUES (?, ?, ?, ?, ?, ?, 0, 0, 'Новичок')
-        ''', (user.id, chat_id, user.username, user.first_name, user.last_name, current_date))
+            INSERT OR IGNORE INTO main_data_user (user_id, chat_id, chat_title, username, first_name, last_name, date, message_count, experience, rank)
+            VALUES (?, ?, ?, ?, ?, ?, ?, 0, 0, 'Новичок')
+        ''', (user.id, chat_id, chat_title, user.username, user.first_name, user.last_name, current_date))
         conn.commit()
         logging.info(f"Пользователь {user.username} добавлен в базу данных или уже существует.")
 
@@ -71,6 +75,7 @@ def add_user_and_update_message_count(user, chat_id):
         logging.error(f"Ошибка при добавлении пользователя или обновлении количества сообщений и опыта: {e}")
     finally:
         conn.close()
+
 
 # Функция для обновления звания пользователя
 def update_user_rank(user_id, chat_id):
@@ -100,7 +105,6 @@ def update_user_rank(user_id, chat_id):
             WHERE user_id = ? AND chat_id = ?
         ''', (new_rank, user_id, chat_id))
         conn.commit()
-        # logging.info(f"Звание пользователя {user_id} в чате {chat_id} обновлено на {new_rank}.")
     except sqlite3.Error as e:
         logging.error(f"Ошибка при обновлении звания пользователя: {e}")
     finally:
