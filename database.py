@@ -13,7 +13,6 @@ logging.basicConfig(
 # Имя базы данных SQLite
 DB_NAME = 'test-db.db'
 
-
 # Функция для создания базы данных и таблицы пользователей
 def create_database_and_table():
     conn = sqlite3.connect(DB_NAME)
@@ -40,8 +39,6 @@ def create_database_and_table():
         logging.error(f"Ошибка при создании базы данных или таблицы: {e}")
     finally:
         conn.close()
-
-
 
 # Функция для добавления пользователя в базу данных и обновления количества сообщений и опыта
 def add_user_and_update_message_count(user, chat_id, chat_title):
@@ -70,15 +67,14 @@ def add_user_and_update_message_count(user, chat_id, chat_title):
         logging.info(f"Количество сообщений и опыт для пользователя {user.username} обновлены.")
 
         # Обновление звания пользователя
-        update_user_rank(user.id, chat_id)
+        update_user_rank(user.id, chat_id, user.username)
     except sqlite3.Error as e:
         logging.error(f"Ошибка при добавлении пользователя или обновлении количества сообщений и опыта: {e}")
     finally:
         conn.close()
 
-
 # Функция для обновления звания пользователя
-def update_user_rank(user_id, chat_id):
+def update_user_rank(user_id, chat_id, username=None):
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
     try:
@@ -99,16 +95,36 @@ def update_user_rank(user_id, chat_id):
             if total_experience >= experience_threshold:
                 new_rank = ranks[i]
 
+        # Получение текущего ранга
         cursor.execute('''
-            UPDATE main_data_user
-            SET rank = ?
+            SELECT rank
+            FROM main_data_user
             WHERE user_id = ? AND chat_id = ?
-        ''', (new_rank, user_id, chat_id))
-        conn.commit()
+            ORDER BY date DESC
+            LIMIT 1
+        ''', (user_id, chat_id))
+        current_rank = cursor.fetchone()[0]
+
+        if new_rank != current_rank:
+            cursor.execute('''
+                UPDATE main_data_user
+                SET rank = ?
+                WHERE user_id = ? AND chat_id = ?
+            ''', (new_rank, user_id, chat_id))
+            conn.commit()
+            logging.info(f"Ранг пользователя {username} обновлен на {new_rank}.")
+            if username:
+                send_rank_update_message(username, new_rank)
     except sqlite3.Error as e:
         logging.error(f"Ошибка при обновлении звания пользователя: {e}")
     finally:
         conn.close()
+
+# Функция для отправки сообщения о новом ранге
+def send_rank_update_message(username, new_rank):
+    message = f"Поздравляем, {username}! Ваш новый ранг: {new_rank}!"
+    logging.info(message)
+    # Здесь можно добавить код для отправки сообщения пользователю, например, через бота
 
 # Функция для получения топ-10 пользователей по количеству сообщений
 def get_top_10_users(chat_id):
